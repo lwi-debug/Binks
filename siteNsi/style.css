@@ -1,14 +1,21 @@
 h1{
-  text-align: center;
-  font-family: sans-serif;
-  color: gray;
+  margin: 50px;
+	color: black;
+	text-align: center;
+  font-family:Quicksand-regular;
   font-size: 75;
 }
-body{
-  background-color: rgb(7, 10, 10);
+@font-face {
+    font-family:Quicksand-regular ;
+    src: url('src/police/Quicksand-regular.otf');
 }
 div{
   margin: 50px 10% 20px;;
   padding: auto;
-  background-color: rgb(7 ,10 ,10);
+  background-color:white;
+}
+
+
+body{
+  background-color: white;
 }

@@ -2,7 +2,7 @@
 const canvas = document.getElementById("Canvas"),
       ctx = canvas.getContext("2d");
 ctx.imageSmoothingEnabled = false;
-document.getElementById("Canvas").style.backgroundColor = "rgb(39,42,43)";
+document.getElementById("Canvas").style.backgroundColor = "white";
 
 //tracking souris
 canvas.addEventListener('mousedown',onDown,false)
@@ -109,21 +109,11 @@ logo15.onload = function() {
 }
 logo15.src = "src/images/logo15.jpg";
 
-ctx.fillRect(75, 75, 1370, 150);
-ctx.fillRect(75, 250, 1370, 150);
-ctx.fillRect(75, 425, 1370, 150);
-ctx.fillRect(75, 600, 1370, 150);
-ctx.fillRect(75, 775, 1370, 150);
-ctx.fillRect(75, 950, 1370, 150);
-ctx.fillRect(75, 1125, 1370, 150);
-ctx.fillRect(75, 1300, 1370, 150);
-ctx.fillRect(75, 1475, 1370, 150);
-ctx.fillRect(75, 1650, 1370, 150);
-ctx.fillRect(75, 1825, 1370, 150);
-ctx.fillRect(75, 2000, 1370, 150);
-ctx.fillRect(75, 2175, 1370, 150);
-ctx.fillRect(75, 2350, 1370, 150);
-ctx.fillRect(75, 2525, 1370, 150);
+//affichage des rectangles
+ctx.fillStyle= 'grey';
+for (i=75; i <= 2525; i+=175){  
+  ctx.fillRect(75, i, 1370, 150);
+}
 
 //détécteur de click
 function onDown(event){
