@@ -1,3 +1,9 @@
+var element = document.getElementById('clickme');
+
+element.addEventListener('click', function(e){
+  e.target.innerHTML = 'bravo chacal';
+});
+
 //initialisation du canvas
 const canvas = document.getElementById("Canvas"),
       ctx = canvas.getContext("2d");
@@ -111,7 +117,7 @@ logo15.src = "src/images/logo15.jpg";
 
 //affichage des rectangles
 ctx.fillStyle= 'grey';
-for (i=75; i <= 2525; i+=175){  
+for (i=75; i <= 2525; i+=175){
   ctx.fillRect(75, i, 1370, 150);
 }
 
