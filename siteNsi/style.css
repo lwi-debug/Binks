@@ -5,6 +5,15 @@ h1{
   font-family:Quicksand-regular;
   font-size: 75;
 }
+
+h2{
+  margin: 50px;
+	color: black;
+	text-align: center;
+  font-family:Quicksand-regular;
+  font-size: 50;
+}
+
 @font-face {
     font-family:Quicksand-regular ;
     src: url('src/police/Quicksand-regular.otf');
@@ -18,4 +27,18 @@ div{
 
 body{
   background-color: white;
+}
+
+.espaceMusique{
+  margin: auto;
+  margin-bottom: 50px;
+  height: 150px;
+  width: 1400px;
+  background-color: grey;
+}
+
+.logoMusique{
+  margin: 25px 25px;
+  height: 100px;
+  width: 100px;
 }
