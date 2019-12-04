@@ -13,7 +13,7 @@ function play(idPlayer, control) {
 }
 
 function resume(idPlayer) {
-  
+
     var player = document.querySelector('#' + idPlayer);
 
     player.currentTime = 0;
