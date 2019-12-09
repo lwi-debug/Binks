@@ -18,15 +18,19 @@
     <h2>par leith et louis</h2>
 
     <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo1.jpg" onclick="play('musique1', this)"/>
-      <audio id='musique1'>
-        <source src = "src/sons/musique1.mp3">
-      </audio>
+      <div id="barreProgression" style='top: 165px;'>
+        <audio id='musique1' ontimeupdate="update(this)">
+          <source src = "src/sons/musique1.mp3">
+        </audio>
+      </div>
     </div>
 
     <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo2.jpg" onclick="play('musique2', this)"/>
-      <audio id='musique2'>
-        <source src = "src/sons/musique2.mp3">
-      </audio>
+      <div id="barreProgression">
+        <audio id='musique2' ontimeupdate="update(this)">
+          <source src = "src/sons/musique2.mp3">
+        </audio>
+      </div>
     </div>
 
     <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo3.jpg" onclick="play('musique3', this) "/>
@@ -38,7 +42,7 @@
     <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo4.jpg" onclick="play('musique4', this)"/>
       <audio id='musique4'>
         <source src = "src/sons/musique4.mp3">
-      </audio> 
+      </audio>
     </div>
 
     <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo5.jpg" onclick="play('musique5', this)"/>
@@ -67,13 +71,13 @@
     <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo9.jpg" onclick="play('musique9', this)"/>
      <audio id='musique9'>
         <source src = "src/sons/musique9.mp3">
-      </audio> 
+      </audio>
     </div>
 
     <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo10.jpg" onclick="play('musique10', this)"/>
       <audio id='musique10'>
         <source src = "src/sons/musique10.wav">
-      </audio> 
+      </audio>
     </div>
 
     <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo11.jpg" onclick="play('musique11', this)"/>
@@ -108,8 +112,8 @@
 
 
     <script src="script.js"></script>
- 
-  <footer> 
+
+  <footer>
       <nav>
           <ul>
             <li class="binks1"><a href="">A propos</a></li>

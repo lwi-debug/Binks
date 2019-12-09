@@ -82,3 +82,12 @@ a {
 nav ul {
   text-align : center;
 }
+
+#barreProgression{
+  margin-left: 0px;
+  position: absolute;
+  left: 252px;
+  height: 150px;
+  background-color: #CFD1D5;
+  opacity: 0.5;
+}
