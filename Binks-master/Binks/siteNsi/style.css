@@ -46,12 +46,14 @@ body{
   height: 150px;
   width: 1400px;
   background-color: grey;
+  z-index: 0;
 }
 
 .logoMusique{
   margin: 25px 25px;
   height: 100px;
   width: 100px;
+  z-index: 2;
 
 }
 
@@ -90,4 +92,7 @@ nav ul {
   height: 150px;
   background-color: #CFD1D5;
   opacity: 0.5;
+  max-width: 1400px;
+  overflow: hidden;
+  z-index: 1;
 }

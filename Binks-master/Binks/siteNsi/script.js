@@ -24,7 +24,7 @@ function update(player) {
     var duration = player.duration;
     var time     = player.currentTime;
     var fraction = time / duration;
-    var percent  = Math.ceil(fraction * 100);
+    var percent  = fraction * 100;
 
     var progress = document.querySelector('#barreProgression');
 
