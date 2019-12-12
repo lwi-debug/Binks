@@ -29,4 +29,4 @@ function update(player) {
     var progress = document.querySelector('#barreProgression');
 
     progress.style.width = percent + '%';
-}
+} 
