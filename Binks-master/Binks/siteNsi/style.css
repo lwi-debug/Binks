@@ -19,6 +19,7 @@ h2{
 @font-face {
     font-family:Quicksand-regular ;
     src: url('src/police/Quicksand-regular.otf');
+
 }nav ul li {
   text-align : center ;
   display : inline-block;
@@ -46,13 +47,13 @@ body{
   height: 150px;
   width: 1400px;
   background-color: grey;
-  z-index: 0;
 }
 
 .logoMusique{
   margin: 25px 25px;
   height: 100px;
   width: 100px;
+  position: absolute;
   z-index: 2;
 
 }
@@ -87,12 +88,26 @@ nav ul {
 
 #barreProgression{
   margin-left: 0px;
-  position: absolute;
   left: 252px;
+  top: 165px;
   height: 150px;
   background-color: #CFD1D5;
   opacity: 0.5;
   max-width: 1400px;
   overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+#barreProgression2{
+  margin-left: 0px;
+  left: 252px;
+  top: 265px;
+  height: 150px;
+  background-color: #CFD1D5;
+  opacity: 0.5;
+  max-width: 1400px;
+  overflow: hidden;
+  position: absolute;
   z-index: 1;
 }
