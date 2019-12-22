@@ -17,23 +17,21 @@
     <h1>BINKS</h1>
     <h2>par leith et louis</h2>
 
-    <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo1.jpg" onclick="play('musique1', this); resume('musique2')"/>
-      <div id="barreProgression">
+    <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo1.jpg" onclick="play('musique1', this)"/>
+        <div id = barreProgression></div>
         <audio id='musique1' ontimeupdate="update(this)">
           <source src = "src/sons/musique1.mp3">
         </audio>
-      </div>
     </div>
 
     <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo2.jpg" onclick="play('musique2', this)"/>
-      <div id="barreProgression2">
+        <div id = barreProgression></div>
         <audio id='musique2' ontimeupdate="update(this)">
           <source src = "src/sons/musique2.mp3">
-        </audio>
-      </div>
     </div>
 
     <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo3.jpg" onclick="play('musique3', this) "/>
+      <div class = barreProgression></div>
       <audio id='musique3'>
         <source src = "src/sons/musique3.mp3">
       </audio>

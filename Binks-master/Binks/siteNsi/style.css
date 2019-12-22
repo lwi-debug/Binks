@@ -87,27 +87,10 @@ nav ul {
 }
 
 #barreProgression{
-  margin-left: 0px;
-  left: 252px;
-  top: 165px;
-  height: 150px;
   background-color: #CFD1D5;
-  opacity: 0.5;
-  max-width: 1400px;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
-}
-
-#barreProgression2{
-  margin-left: 0px;
-  left: 252px;
-  top: 265px;
   height: 150px;
-  background-color: #CFD1D5;
-  opacity: 0.5;
-  max-width: 1400px;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
+  width: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  opacity: 0.3;
 }
