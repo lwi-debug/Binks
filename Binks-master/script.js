@@ -1,4 +1,4 @@
-function play(idPlayer, control) {
+function play(idPlayer) {
 
   let player = document.querySelector('#' + idPlayer);
 
@@ -30,7 +30,7 @@ document.addEventListener('play', function(e){
 
 function update(player) {
 
-  let barre = document.getElementById('barreProgression');
+  let barre = document.getElementById(player.parentNode);
 
   let duree = player.duration;
   let temps = player.currentTime;
