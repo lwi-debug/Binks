@@ -94,3 +94,20 @@ nav ul {
   margin-right: 0px;
   opacity: 0.3;
 }
+
+#progression{
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: 65px;
+}
+
+#total{
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: 65px;
+}
+
+#titre{
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: 65px;}
