@@ -45,7 +45,7 @@ body{
   margin: auto;
   margin-bottom: 50px;
   height: 150px;
-  width: 1400px;
+  width: 1000px;
   background-color: grey;
 }
 
@@ -67,14 +67,17 @@ nav ul li {
   text-align : center ;
   display : inline-block;
   width : 30%;
-  font-size :40px;
+  font-size :25px;
   margin : auto;
   padding : 10px 10px 10px 10px;
 }
 
-
-.binks1{
-  background-color: #CFD1D5;
+ 
+.style_footer{
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+  margin-bottom: -5px;
 }
 
 a {
