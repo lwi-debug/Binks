@@ -43,3 +43,29 @@ function update(player) {
   }
   timer.innerHTML = mins + ':' + secs;
 }
+
+function positionSouris(event) {
+    return {
+        x: event.pageX,
+        y: event.pageY
+    };
+}
+
+function positionBarre(element){
+    var top = 0, left = 0;
+
+    do {
+        top  += element.offsetTop;
+        left += element.offsetLeft;
+    } while (element = element.offsetParent);
+
+    return { x: left, y: top };
+}
+
+function clickBarre(idPlayer, progression, event) {
+
+    let player = document.querySelector('#' + idPlayer);
+    let barre = positionBarre(progression);
+    let click = positionSouris(event);
+    console.log(barre, click);
+}

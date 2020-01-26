@@ -17,7 +17,7 @@
     <h1>BINKS</h1>
     <h2>par leith et louis</h2>
 
-    <div class = "espaceMusique"><img class = "logoMusique" src="src/images/logo1.jpg" onclick="play('musique1')"/>
+    <div class = "espaceMusique" onclick="clickBarre('musique1', this.childNode, event)"><img class = "logoMusique" src="src/images/logo1.jpg" onclick="play('musique1')"/>
         <div id = barreProgression>
           <audio id='musique1' ontimeupdate="update(this)">
             <source src = "src/sons/musique1.wav">
