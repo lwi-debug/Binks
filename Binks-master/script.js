@@ -26,24 +26,34 @@ document.addEventListener('play', function(e){
 function update(player) {
 
   let barre = player.parentNode;
-
-  let duree = player.duration;
-  let temps = player.currentTime;
-  let fraction = temps/duree;
-  let pourcentage = fraction*100;
+      duree = player.duration;
+      temps = player.currentTime;
+      fraction = temps/duree;
+      pourcentage = fraction*100;
 
   barre.style.width = pourcentage + '%';
 
   timer = document.getElementById('progression');
 
-  var mins = Math.floor(player.currentTime / 60);
-  var secs = Math.floor(player.currentTime % 60);
+  let mins = Math.floor(player.currentTime / 60);
+      secs = Math.floor(player.currentTime % 60);
   if (secs < 10) {
       secs = '0' + String(secs);
   }
   timer.innerHTML = mins + ':' + secs;
 }
 
+function boutonP(idPlayer){
+  let player = document.querySelector('#' + idPlayer);
+  player.currentTime += 10.0;
+}
+
+function boutonM(idPlayer){
+  let player = document.querySelector('#' + idPlayer);
+  player.currentTime -= 10.0;
+}
+
+    /*
 function positionSouris(event) {
     return {
         x: event.pageX,
@@ -65,7 +75,27 @@ function positionBarre(element){
 function clickBarre(idPlayer, progression, event) {
 
     let player = document.querySelector('#' + idPlayer);
-    let barre = positionBarre(progression);
-    let click = positionSouris(event);
-    console.log(barre, click);
-}
+        barre = progression.childNodes[2];
+        click = positionSouris(event);
+        progress = positionBarre(progression);
+        temps = player.currentTime;
+        click = click.x - progress.x;
+        pourcentage = Math.ceil((click/progression.offsetWidth)*100);
+        duration = player.duration;
+
+    temps = (duration*pourcentage)/100;
+
+    console.log("progression = ", progress);
+    console.log("click = ", click)
+    console.log('duration = ', duration);
+    console.log("pourcentage = ", pourcentage);
+    console.log('temps = ', temps);
+
+
+
+
+
+    barre.style.width=click.x / 100 + '%';
+    console.log(barre.style.width)
+
+}*/
